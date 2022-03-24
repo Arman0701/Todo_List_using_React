@@ -1,20 +1,24 @@
 import styles from "./TodoItem.module.css";
 
-export default function TodoItem({item, todos, setTodos}) {
+export default function TodoItem({ item, dispatch }) {
     const handleChange = () => {
-        item.checked = ! item.checked;
-        setTodos([...todos]);
-    }
+        item.checked = !item.checked;
+        dispatch({ type: "itemChange" });
+    };
 
     const remove = () => {
-        const currentItemID = item.id;
-        setTodos(todos.filter(item => item.id !== currentItemID))
-    }
+        dispatch({ type: "removeItem", payload: item.id });
+    };
 
     return (
         <div className={styles.TodoItem}>
             <label>
-                <input checked={item.checked ? 'checked' : ''} className={styles.TodoItemInput} type="checkbox" onChange={handleChange} />
+                <input
+                    checked={item.checked ? "checked" : ""}
+                    className={styles.TodoItemInput}
+                    type="checkbox"
+                    onChange={handleChange}
+                />
                 <p className={styles.TodoItemTitle}>{item.text}</p>
             </label>
             <div onClick={remove} className={styles.TodoItemButton}>
