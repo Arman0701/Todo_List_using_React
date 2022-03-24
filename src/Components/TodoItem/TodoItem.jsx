@@ -3,7 +3,7 @@ import styles from "./TodoItem.module.css";
 export default function TodoItem({item, todos, setTodos}) {
     const handleChange = () => {
         item.checked = ! item.checked;
-        setTodos([...todos]); 
+        setTodos([...todos]);
     }
 
     const remove = () => {

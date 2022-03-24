@@ -11,9 +11,9 @@ export default function TodoInput({ set, todos }) {
                 text: inputRef.current.value,
                 checked: false,
             }])
+            inputRef.current.value = '';
+            inputRef.current.focus();
         }
-        inputRef.current.value = '';
-        inputRef.current.focus();
     }
 
     const handleKeyPress = (e) => {
