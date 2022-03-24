@@ -1,0 +1,55 @@
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 0;
+    padding: 0 15px;
+    height: 5vh;
+    border: 2px solid rgba(255 255 255 / 45%);
+    backdrop-filter: blur(10px);
+    background: rgba(255 255 255 / 10%);
+    border-radius: 8px;
+    color: white;
+    font-weight: 600;
+}
+.status {
+    text-align: center;
+    width: 15%;
+    border: 2px solid rgba(255 255 255 / 25%);
+    backdrop-filter: blur(10px);
+    background: rgba(255 255 255 / 45%);
+    border-radius: 8px;
+}
+.buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 30%;
+}
+.button {
+    transition: 0.15s;
+    cursor: pointer;
+    padding: 0 5px;
+    border: 2px solid rgba(255 255 255 / 25%);
+    backdrop-filter: blur(1px);
+    background: rgba(255 255 255 / 45%);
+    border-radius: 8px;
+}
+.button:nth-child(1):hover {
+    color: rgb(44, 163, 44);
+    border-color: rgb(44, 163, 44);
+}
+.button:nth-child(2):hover {
+    color: crimson;
+    border-color: crimson;
+}
+
+
+
+
+
+
+
+
+
+

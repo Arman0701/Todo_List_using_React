@@ -1,0 +1,42 @@
+*{
+	margin: 0 auto;
+	padding: 0;
+	box-sizing: border-box;
+	user-select: none;
+    font-family: "Open Sans";
+}
+.AppContainer {
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+    background: linear-gradient(-45deg, #23a6d5, #23d5ab);
+}
+.todoContainer {
+    width: 75%;
+    height: 100vh;
+}
+.itemsContainer {
+    margin: 10px 0;
+    padding: 0 15px;
+    overflow-x: auto;
+    height: 80vh;
+    border: 2px solid rgba(255 255 255 / 85%);
+    backdrop-filter: blur(1px);
+    border-radius: 15px;
+}
+.itemsContainer::-webkit-scrollbar {
+    display: none;
+}
+.emptyTasks {
+    color: white;
+    display: inline-block;
+    padding: 12px;
+    border-radius: 12px;
+    background: rgba(255 255 255 / 55%);
+    border: 1px solid white;
+    margin-top: 15px;
+}

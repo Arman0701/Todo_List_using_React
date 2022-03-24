@@ -1,0 +1,46 @@
+.TodoItem {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 0;
+    padding: 15px;
+    border: 2px solid rgba(255 255 255 / 85%);
+    backdrop-filter: blur(1px);
+    background: rgba(255 255 255 / 45%);
+    border-radius: 15px;
+}
+
+.TodoItem label {
+    display: flex;
+    align-items: center;
+    width: 95%;
+}
+
+.TodoItemInput {
+    width: 20px;
+    height: 20px;
+}
+
+.TodoItemTitle {
+    width: 95%;
+    text-align: left;
+    color: white;
+    font-weight: 600;
+    font-size: 19px;
+}
+
+.TodoItemButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+    border: 1px solid transparent;
+    border-radius: 50%;
+    transition: 0.15s;
+    cursor: pointer;
+    color: white;
+}
+.TodoItemButton:hover {
+    border-color: white;
+    color: crimson;
+}
