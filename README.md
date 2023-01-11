@@ -9,4 +9,6 @@
 #### Screenshots
 ---
 
-![Screenshot]()
+![Screenshot](https://github.com/Arman0701/Todo_List_using_React/blob/main/src/assets/screenshots/1.png)
+![Screenshot](https://github.com/Arman0701/Todo_List_using_React/blob/main/src/assets/screenshots/2.png)
+![Screenshot](https://github.com/Arman0701/Todo_List_using_React/blob/main/src/assets/screenshots/3.png)
