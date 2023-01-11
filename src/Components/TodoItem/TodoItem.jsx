@@ -15,7 +15,7 @@ export default function TodoItem({ item, dispatch }) {
             <label>
                 <input
                     checked={item.checked ? "checked" : ""}
-                    className={styles.TodoItemInput}
+                    className={styles.todoItemInput}
                     type="checkbox"
                     onChange={handleChange}
                 />

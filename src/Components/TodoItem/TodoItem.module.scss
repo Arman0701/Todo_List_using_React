@@ -1,3 +1,5 @@
+@import "../../sass/mixings.scss";
+
 .TodoItem {
     display: flex;
     align-items: center;
@@ -8,39 +10,54 @@
     backdrop-filter: blur(1px);
     background: rgba(255 255 255 / 45%);
     border-radius: 15px;
+
+	label {
+		display: flex;
+		align-items: center;
+		width: 95%;
+
+		.todoItemInput {
+			width: 17px;
+			aspect-ratio: 1/1;
+			margin-right: 10px;
+		}
+	
+		.TodoItemTitle {
+			width: calc(100% - 27px);
+			text-align: left;
+			color: white;
+			font-weight: 600;
+			font-size: 17px;
+
+			display: block;
+			border: 1px solid red;
+			word-wrap: break-word;
+		}
+	}
+
+	.TodoItemButton {
+		width: 28px;
+		height: 28px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		padding: 4px;
+		border: 1px solid transparent;
+		border-radius: 50%;
+		transition: 0.15s;
+		color: white;
+		cursor: pointer;
+		
+		&:hover {
+			border-color: white;
+			color: crimson;
+		}
+	
+		i {
+			font-size: 16px;
+		}
+	}
 }
 
-.TodoItem label {
-    display: flex;
-    align-items: center;
-    width: 95%;
-}
 
-.TodoItemInput {
-    width: 20px;
-    height: 20px;
-}
 
-.TodoItemTitle {
-    width: 95%;
-    text-align: left;
-    color: white;
-    font-weight: 600;
-    font-size: 19px;
-}
-
-.TodoItemButton {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 8px;
-    border: 1px solid transparent;
-    border-radius: 50%;
-    transition: 0.15s;
-    cursor: pointer;
-    color: white;
-}
-.TodoItemButton:hover {
-    border-color: white;
-    color: crimson;
-}

@@ -1,3 +1,5 @@
+@import "./sass/mixings.scss";
+
 *{
 	margin: 0 auto;
 	padding: 0;
@@ -5,9 +7,9 @@
 	user-select: none;
     font-family: "Open Sans";
 }
+
 .AppContainer {
-    width: 100vw;
-    height: 100vh;
+    min-height: 100vh;
     text-align: center;
 	display: flex;
 	align-items: center;
@@ -17,7 +19,11 @@
 }
 .todoContainer {
     width: 75%;
-    height: 100vh;
+    height: 100%;
+
+	@include BP(tablet) {
+		width: 95%;
+	}
 }
 .itemsContainer {
     margin: 10px 0;

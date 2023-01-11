@@ -1,9 +1,11 @@
+@import "../../sass/mixings.scss";
+
 .footer {
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin: 10px 0;
-    padding: 0 15px;
+    padding: 15px;
     height: 5vh;
     border: 2px solid rgba(255 255 255 / 45%);
     backdrop-filter: blur(10px);
@@ -14,17 +16,22 @@
 }
 .status {
     text-align: center;
-    width: 15%;
+    width: fit-content;
     border: 2px solid rgba(255 255 255 / 25%);
     backdrop-filter: blur(10px);
     background: rgba(255 255 255 / 45%);
     border-radius: 8px;
+	padding: 0 10px;
 }
 .buttons {
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 30%;
+
+	@include BP(laptop) {
+		width: 60%;
+	}
 }
 .button {
     transition: 0.15s;
