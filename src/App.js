@@ -1,5 +1,5 @@
 import { useEffect, useReducer } from "react";
-import "./App.css";
+import "./App.scss";
 import TodoInput from "./Components/TodoInput/TodoInput";
 import TodoItem from "./Components/TodoItem/TodoItem";
 import TodoFooter from "./Components/TodoFooter/TodoFooter";

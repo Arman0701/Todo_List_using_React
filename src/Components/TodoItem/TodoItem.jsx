@@ -1,4 +1,4 @@
-import styles from "./TodoItem.module.css";
+import styles from "./TodoItem.module.scss";
 
 export default function TodoItem({ item, dispatch }) {
     const handleChange = () => {

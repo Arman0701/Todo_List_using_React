@@ -1,4 +1,4 @@
-import styles from "./TodoInput.module.css";
+import styles from "./TodoInput.module.scss";
 import { useRef } from "react";
 
 export default function TodoInput({ dispatch }) {

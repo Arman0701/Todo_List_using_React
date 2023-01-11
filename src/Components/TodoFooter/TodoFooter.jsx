@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import styles from "./TodoFooter.module.css";
+import styles from "./TodoFooter.module.scss";
 
 export default function TodoFooter({ todos, dispatch }) {
     const [checkedTasks, setCheckedTasks] = useState(0);
